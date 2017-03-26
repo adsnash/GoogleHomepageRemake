@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Google</title>
+		<link rel="shortcut icon" href="https://www.google.com/images/branding/product/ico/googleg_lodp.ico"/>
+		<style type = "text/css">
+			body { font-family: Arial;
+			font-size: .8em; }
+			
+			a, a:visited {text-decoration: none; 
+			color: gray; }
+			
+			header { right: 0;
+			position: absolute;
+			margin: 15px 15px 15px 15px;
+			text-decoration: none;
+			height: 40px; }
+			
+			.head { padding: 5px;
+			text-decoration: none;
+			margin-right: 4px; }
+			
+			#grid { width: 17px;
+			height: 17px;
+			margin: 50px, 10px, 0px, 10px;
+			padding: 50px, 10px, 0px, 10px;
+			bottom: 0; }
+
+			#sign { background-color: #3369e8;
+			color: White;
+			padding: 6px 12px 6px 12px;
+			text-decoration: none;
+			border-radius: 2px;
+			margin-right: 14px; }
+
+			a:hover { text-decoration: underline; }
+			
+			#logo { width: 272px;
+			height: 92px;
+			position: relative;
+			center: 0;
+			display: flex;
+			margin: auto;
+			margin-top: 98px;
+			margin-bottom: 35px; }
+
+			#topDiv { width: 100%;
+			height: 100px; }
+
+			#search { width: 555px;
+			height: 38px;
+			center: 0;
+			display: flex;
+			margin: auto;
+			padding-left: 10px;
+			justify-content: center;
+			font-size: 18px; }
+
+			#mid1 { height: 100px;
+			width: 50%;
+			position: relative;
+			float: left; }
+
+			#mid2 { height: 100px;
+			width: 50%;
+			position: relative;
+			float: right; }
+
+			#buttonL { background-color: #f1f1f1;
+			margin: 15px 5px 15px 5px;
+			position: relative;
+			justify-content: center;
+			border-radius: 2px;
+			float: right;
+			text-decoration: none;
+			right: 10px;
+			top: 15px; }
+
+			#buttonR { background-color: #f1f1f1;
+			margin: 15px 5px 15px 5px;
+			position: relative;
+			justify-content: center;
+			border-radius: 3px;
+			float: left;
+			text-decoration: none;
+			left: -10px;
+			top: 15px; }
+
+			.buttonInt { background-color: #f1f1f1;
+			color: gray;
+			font-family: Arial;
+			border: none;
+			font-weight: bold;
+			padding: 9px 15px 9px 15px;
+			border-radius: 3px; 
+			font-size: 1.05em; }
+
+			.buttonInt:hover {border: 1px solid gray;
+			color: black; }
+			
+			#lucky { font-family: Arial; }
+			
+			footer { background-color: #f1f1f1;
+			width: 100%;
+			height: 41px; 
+			position: absolute;
+			bottom: 0;
+			left: 0; }
+
+			.footL { float: left;
+			margin: 13px 12px 13px 20px;
+			position: inline;
+			text-decoration: none; }
+
+			.footR { float: right;
+			margin: 13px 20px 13px 12px;
+			position: inline;
+			text-decoration: none; }
+			
+			#farL { padding-left: 9px; }
+			#farR { padding-right: 9px; }
+
+		</style>
+	</head>
+
+	<body>
+		<div id="topDiv">
+		<header>
+			<span><a class="head" href="https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/?tab%3Dwm&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1#identifier">Gmail</a></span>
+			<span><a class="head" href="https://www.google.com/imghp?hl=en&tab=wi&ei=zlMuWMP2JoqV0gLxkbaYBA&ved=0EKouCBcoAQ">Images</a></span>
+			<span><img id="grid" src="http://image.flaticon.com/icons/svg/8/8722.svg"></span>
+			<span><a id ="sign" href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/#identifier"><b>Sign in</b></a></span>
+		</header>
+		</div>
+		
+		<img id="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google logo">
+		
+		<form method = "get" action = "http://www.google.com/search">
+			<label>
+				<input id="search" name = "q" type = "text" autofocus />
+			</label>		
+			<div id="mid1">
+				<span id="buttonL"><input class="buttonInt" type="submit" value="Google Search"/></span>
+			</div>
+			<div id="mid2">
+				<span id="buttonR"><input class="buttonInt" id ="lucky" name=btnI type=submit value="I’m Feeling Lucky" /></span>
+			</div>
+		</form>
+		
+		<footer>
+			<span><a class="footL" id="farL" href = "https://www.google.com/intl/en/ads/?fg=1">Advertising</a></span>
+			<span><a class="footL" href = "https://www.google.com/services/?fg=1#?modal_active=none">Business</a></span>
+			<span><a class="footL" href = "https://www.google.com/intl/en/about/">About</a></span>
+			<span><a class="footR" href = "https://www.google.com/preferences?hl=en">Settings</a></span>
+			<span><a class="footR" href = "https://www.google.com/intl/en/policies/terms/?fg=1">Terms</a></span>
+			<span><a class="footR" id="farR" href = "https://www.google.com/intl/en/policies/privacy/?fg=1">Privacy</a></span>
+		</footer>
+	</body>
+</html>	
